@@ -4,6 +4,8 @@ import Login from "./Login";
 import Usuario from "./Usuario";
 import Home from "./Home";
 import MenuPrivado from "./MenuPrivado";
+import Categorias from "./Categorias";
+import Produtos from "./Produtos";
 
 const router = createBrowserRouter([{
 path: "/",
@@ -35,6 +37,14 @@ children: [
   {
     path: "usuario",
     element: <Usuario/>,
+  },
+  {
+    path: "categoria",
+    element: <Categorias/>,
+  },
+  {
+    path: "produto",
+    element: <Produtos/>,
   }
 ]
 }
