@@ -4,9 +4,9 @@ import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 const MenuPrivado  = () => {
   return (
     <>
-      <Navbar bg="light" expand="lg">
+      <Navbar bg="light" expand="lg" className="px-3">
         <NavLink className="navbar-brand" to="/">
-          Rotas com react-router
+          pw-rodrigo-2026
         </NavLink>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -18,7 +18,15 @@ const MenuPrivado  = () => {
             </NavLink>
 
             <NavDropdown title="Ações" id="basic-nav-dropdown">
-              <NavLink className="dropdown-item" to="/usuario">
+              <NavLink className="dropdown-item" to="/privado/categoria">
+                Categorias
+              </NavLink>
+
+              <NavLink className="dropdown-item" to="/privado/produto">
+                Produtos
+              </NavLink>
+
+              <NavLink className="dropdown-item" to="/privado/usuario">
                 Usuário
                 {localStorage.getItem('usuario')}
 

@@ -1,5 +1,5 @@
 {
-  "name": "rotascomreact2",
+  "name": "pw-rodrigo-2026",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -39,5 +39,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^react-router/dom$": "<rootDir>/node_modules/react-router-dom/node_modules/react-router/dist/development/dom-export.js"
+    }
   }
 }
